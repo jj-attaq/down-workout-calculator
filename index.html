@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>down workout calculator</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <button>press me</button>
+    <script>
+      // Your JavaScript goes here!
+
+      const button = document.querySelector("button");
+      function calculate() {
+        let setCount = 20; // 20 is for testing purposes, should be userInput of somekind
+        let result = (setCount + --setCount) * setCount; // 741 | (20 + 19)19 = 741
+
+        // find way to store the initial setCount + --setCount, add it to the next, and repeat until --setcount = 0
+        // probably if else loop and some other semantic stuff
+
+        console.log(setCount);
+        alert(result);
+      }
+      button.addEventListener("click", calculate);
+    </script>
+  </body>
+</html>
