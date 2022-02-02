@@ -5,27 +5,18 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-    <button>press me</button>
+    <!-- <button>press me</button> -->
     <script>
       // Your JavaScript goes here!
 
-      const button = document.querySelector("button");
-      function calculate() {
-        let setCount = 20; // 20 is for testing purposes, should be userInput of somekind
-        let result = (setCount + --setCount) * setCount; // this is wrong
+      let setCount = prompt("Please enter your desired number of sets");
+      let result = ((Number(setCount) + 1) / 2) * setCount;
+      alert(result);
 
-        // find way to store the initial setCount + --setCount, add it to the next, and repeat until --setcount = 0
-        // probably if else loop and some other semantic stuff
-
-        // YOU MIGHT NEED TO USE AN ARRAY!!
-        // find a way to count down from the user input number (20 as an example)
-        // adding each increment into the array, stopping at 0
-        // sum all numbers in array
-
-        console.log(setCount);
-        alert(result);
-      }
-      button.addEventListener("click", calculate);
+      // this is the most mathematically elegant solution to the problem
+      // however as a learning tool it leaves something to be desired
+      /* i  did not manage to program the script to execute the calculation
+       1 + 2 + 3 etc... until the desired setcount */
     </script>
   </body>
 </html>
