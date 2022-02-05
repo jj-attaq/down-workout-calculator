@@ -8,14 +8,23 @@
   </head>
   <body>
     <header></header>
-    <form action="/calculate.js">
+    <form onsubmit="calculate()">
       <label for="numberOfSets"
         >Please enter the number of sets you'd like in your down workout:</label
       >
       <br />
       <input tabindex="0" type="number" id="numberOfSets" name="numberOfSets" />
-      <input type="submit" value="calculate" />
+      <input tabindex="0" type="submit" value="calculate" />
     </form>
+    <script>
+      function caluclate() {
+        var sets = document.getElementById("numberOfSets");
+        for (var count = 0, result = count; count <= sets; ++count) {
+          result = count + result;
+          console.log(result);
+        }
+      }
+    </script>
     <footer></footer>
   </body>
 </html>
