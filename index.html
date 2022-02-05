@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>down workout calculator</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>down workout calculator</title>
   </head>
   <body>
-    <script>
+    <header class="header"></header>
+    <form action="/calculate.js">
+      <label for=""></label><input type="text" id="sets" name="numberOfSets" />
+    </form>
+    <button onsubmit="calulate()">calculate</button>
+    <!-- <script>
       var sets = prompt("How many sets do you want to do?");
       for (var count = 0, result = count; count <= sets; ++count) {
         result = count + result;
@@ -14,6 +21,7 @@
       alert(
         `A "down workout" starting at ${sets} sets will result in ${result} repetions.\n \n GET AFTER IT!`
       );
-    </script>
+    </script> -->
+    <footer class="footer"></footer>
   </body>
 </html>
