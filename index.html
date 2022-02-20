@@ -7,23 +7,23 @@
     <title>down workout calculator</title>
   </head>
   <body>
-    <header></header>
-    <form onsubmit="calculate()">
+    <header class="header"></header>
+    <h1>Down workout calculator</h1>
+    <form>
       <label for="numberOfSets"
-        >Please enter the number of sets you'd like in your down workout:</label
-      >
-      <br />
-      <input tabindex="0" type="number" id="numberOfSets" name="numberOfSets" />
-      <input tabindex="0" type="submit" value="calculate" />
+        >Please enter the number of sets you would like to do: </label
+      ><input type="text" id="numerOfSets" name="numberOfSets" />
     </form>
     <script>
-      function caluclate() {
-        var sets = document.getElementById("numberOfSets");
-        for (var count = 0, result = count; count <= sets; ++count) {
-          result = count + result;
-          console.log(result);
-        }
+      /*
+      var sets = prompt("How many sets do you want to do?");
+      for (var count = 0, result = count; count <= sets; ++count) {
+        result = count + result;
+        console.log(result);
       }
+      alert(
+        `A "down workout" starting at ${sets} sets will result in ${result} repetions.\n \n GET AFTER IT!`
+      ); */
     </script>
     <footer></footer>
   </body>
