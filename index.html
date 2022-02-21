@@ -5,19 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>down workout calculator</title>
+<<<<<<< HEAD
   </head>
   <body>
     <header class="header"></header>
+=======
+    <link rel="stylesheet" href="./src/css/style.css">
+  </head>
+  <body>
+    <header class="header"></header>
+    <h1>Down workout calculator</h1>
+    <div class="form">
+      <form action="" method="get" id="form" onsubmit="calculate()">
+      <label for="numberOfSets">Please enter the number of sets you would like to do: </label>
+      <input type="text" id="numberOfSets" name="numberOfSets" tabindex="1" autofocus/>
+      <input type="submit" value="Calculate" tabindex="2" />
+      </form>
+    </div>  
+>>>>>>> experiment
     <script>
-      var sets = prompt("How many sets do you want to do?");
-      for (var count = 0, result = count; count <= sets; ++count) {
-        result = count + result;
-        console.log(result);
+      function calculate() {
+        var sets = document.getElementById('numberOfSets').value;
+        for (var count = 0, result = count; count <= sets; ++count) {
+          result = count + result;
+          // console.log(result);
+        }
+        console.log(typeof sets);
+        //
+        alert(`A "down workout" starting at ${sets} sets will result in ${result} repetions.\n \n GET AFTER IT!`);
+        /*
+        if (typeof document.getElementById('numberOfSets') !== "number") {
+          alert(`Please enter a valid number.`)
+        }
+        else {
+          alert(`A "down workout" starting at ${sets} sets will result in ${result} repetions.\n \n GET AFTER IT!`);
+        }  
+        */
       }
+<<<<<<< HEAD
       alert(
         `A "down workout" starting at ${sets} sets will result in ${result} repetions.\n \n GET AFTER IT!`
       );
     </script>
     <footer class="footer"></footer>
+=======
+    </script>
+    <footer></footer>
+>>>>>>> experiment
   </body>
 </html>
