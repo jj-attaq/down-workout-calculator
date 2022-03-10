@@ -19,7 +19,7 @@
     </div>  
     <script>
       function calculate() {
-        var sets = document.getElementById('numberOfSets').value;
+        var sets = document.getElementById('numberOfSets').value; // add a + in front of document to turn into number value, letters will be NaN
         for (var count = 0, result = count; count <= sets; ++count) {
           result = count + result;
           // console.log(result);
